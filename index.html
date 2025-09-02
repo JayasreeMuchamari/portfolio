@@ -161,36 +161,35 @@
       </div>
     </section>
 
-    <!-- CASE STUDIES (with methods + evaluation/selection) -->
+   <!-- CASE STUDIES (with methods + evaluation/selection) -->
     <section id="case-studies" tabindex="-1">
   <h2>Case Studies</h2>
   <p class="sub">Summary of methods used in each case study (dataset, preprocessing, models, evaluation).</p>
 
   <div class="grid cols-3">
+ <article class="card revealable">
+  <h3>Case Study 1 — Predicting Boston Housing Prices</h3>
+  <p class="meta">Dataset · Methods · Evaluation</p>
 
-   <section id="case-intro" tabindex="-1">
-  <h2>Case Assignments Overview</h2>
-  <p class="sub">
-    A series of weekly case assignments completed during my Master's in Business Analytics,
-    designed to apply machine learning and data science methods on real-world datasets.
-  </p>
+  <ul>
+    <li><strong>Dataset:</strong> Boston Housing (506 records, 14 features, target = Median Home Value):contentReference[oaicite:1]{index=1}</li>
+    <li><strong>Preprocessing:</strong> Cleaned column names, encoded categorical variables (<code>CHAR_RIV</code>, <code>C_MVALUE</code>) into binary, checked for missing values (none found):contentReference[oaicite:2]{index=2}</li>
+    <li><strong>Methods:</strong> 
+      <ul>
+        <li>Baseline OLS with all 13 predictors:contentReference[oaicite:3]{index=3}</li>
+        <li>Feature selection via Exhaustive Search (11 predictors):contentReference[oaicite:4]{index=4}</li>
+        <li>Forward Selection (10 predictors):contentReference[oaicite:5]{index=5}</li>
+      </ul>
+    </li>
+    <li><strong>Evaluation Metrics:</strong> R², Adjusted R², RMSE, MAE, MAPE (train vs. validation):contentReference[oaicite:6]{index=6}</li>
+    <li><strong>Best Model:</strong> Exhaustive Search Regression — Validation RMSE = 3.8781, MAPE = 14.52%:contentReference[oaicite:7]{index=7}</li>
+  </ul>
 
-  <div class="card revealable">
-    <p>
-      Each case study focused on <strong>end-to-end analytics</strong>: from data preprocessing and feature
-      engineering to model building, evaluation, and selecting the best approach. The assignments
-      span multiple domains and techniques:
-    </p>
-    <ul>
-      <li><strong>Regression:</strong> Boston Housing dataset – Multiple Linear Regression & Neural Networks</li>
-      <li><strong>Classification:</strong> Flight Delays dataset – Decision Trees, Logistic Regression</li>
-      <li><strong>Clustering:</strong> U.S. Crime dataset – Hierarchical & K-Means Clustering</li>
-    </ul>
-    <p>
-      The objective was not only to <em>implement algorithms</em> but also to critically evaluate
-      models using metrics like RMSE, MAE, MAPE, Accuracy, Confusion Matrices, and Lift Charts.
-      Recommendations were made on which models generalize best and why.
-    </p>
+  <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank" rel="noopener">View Full Report (PDF)</a></p>
+</article>
+
+
+  
   </div>
 </section>
 
