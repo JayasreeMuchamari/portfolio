@@ -86,19 +86,27 @@ form button{margin-top:8px}
 }
 
 /* Overlapping avatar */
-.avatar-wrap{
-  position:absolute;
-  left:24px;                 /* matches page padding */
-  bottom:-64px;              /* overlap below the banner */
+
+.avatar-wrap {
+  position: absolute;
+  left: 24px;
+  bottom: -64px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden; /* ensures the image stays inside circle */
+  border: 4px solid var(--bg);
+  box-shadow: 0 6px 24px rgba(0,0,0,.35);
 }
-.avatar-wrap img{
-  display:block;
-  width:128px; height:128px;
-  border-radius:50%;
-  border:4px solid var(--bg);         /* ring that adapts to theme */
-  box-shadow:0 6px 24px rgba(0,0,0,.35);
-  background:#fff;
+
+/* Control zoom/crop of profile photo */
+.avatar-wrap img {
+  width: 140%;   /* zoom in */
+  height: 140%;
+  object-fit: cover; /* crop to circle nicely */
+  object-position: center top; /* adjust focus: top/center/bottom */
 }
+
 
 /* Make sure the first section doesn't collide when jumped to */
 #about{ scroll-margin-top: calc(var(--nav-h) + 96px); }
