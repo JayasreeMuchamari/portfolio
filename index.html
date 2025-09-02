@@ -169,23 +169,22 @@
   <div class="grid cols-3">
  <article class="card revealable">
   <h3>Case Study 1 — Predicting Boston Housing Prices</h3>
-  <p class="meta">Dataset · Methods · Evaluation</p>
+  <p><strong>Goal:</strong> Estimate the median home value (MVALUE) in Boston using neighborhood and housing features (506 records, 14 predictors).:contentReference[oaicite:0]{index=0}</p>
 
-  <ul>
-    <li><strong>Dataset:</strong> Boston Housing (506 records, 14 features, target = Median Home Value):contentReference[oaicite:1]{index=1}</li>
-    <li><strong>Preprocessing:</strong> Cleaned column names, encoded categorical variables (<code>CHAR_RIV</code>, <code>C_MVALUE</code>) into binary, checked for missing values (none found):contentReference[oaicite:2]{index=2}</li>
-    <li><strong>Methods:</strong> 
-      <ul>
-        <li>Baseline OLS with all 13 predictors:contentReference[oaicite:3]{index=3}</li>
-        <li>Feature selection via Exhaustive Search (11 predictors):contentReference[oaicite:4]{index=4}</li>
-        <li>Forward Selection (10 predictors):contentReference[oaicite:5]{index=5}</li>
-      </ul>
-    </li>
-    <li><strong>Evaluation Metrics:</strong> R², Adjusted R², RMSE, MAE, MAPE (train vs. validation):contentReference[oaicite:6]{index=6}</li>
-    <li><strong>Best Model:</strong> Exhaustive Search Regression — Validation RMSE = 3.8781, MAPE = 14.52%:contentReference[oaicite:7]{index=7}</li>
-  </ul>
+  <p><strong>Approach:</strong> 
+    I cleaned and prepared the dataset by renaming multi-word columns and encoding categorical variables (e.g., river proximity, mortgage class) into binary form. I then built multiple linear regression models:
+    (a) an OLS baseline with all 13 predictors,
+    (b) an Exhaustive Search model with 11 predictors,
+    and (c) a Forward Selection model with 10 predictors.:contentReference[oaicite:1]{index=1}
+  </p>
 
-  <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank" rel="noopener">View Full Report (PDF)</a></p>
+  <p><strong>Evaluation:</strong>
+    I compared models using R², Adjusted R², RMSE, MAE, and MAPE on both training (75%) and validation (25%) splits. All models performed similarly, but the Exhaustive Search model balanced accuracy and parsimony best.:contentReference[oaicite:2]{index=2}
+  </p>
+
+  <p><strong>Best Model:</strong> Exhaustive Search Regression (11 predictors) achieved Validation RMSE = 3.8781 and MAPE = 14.52%, making it the recommended choice for predicting housing prices.:contentReference[oaicite:3]{index=3}</p>
+
+  <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank">Read Full Report (PDF)</a></p>
 </article>
 
 
