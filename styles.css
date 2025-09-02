@@ -1,0 +1,6 @@
+body { font-family: sans-serif; background:#0b0c10; color:#e8edf2; margin:0; }
+.nav { background:#121317; padding:10px; position:sticky; top:0; }
+.nav a { color:#a7b0ba; margin:0 8px; text-decoration:none; }
+.wrap { max-width:1000px; margin:auto; padding:20px; }
+section { padding:60px 0; border-top:1px solid #1c1f26; }
+footer { text-align:center; padding:20px; border-top:1px solid #1c1f26; color:#a7b0ba; }
