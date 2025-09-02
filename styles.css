@@ -142,3 +142,18 @@ form button{margin-top:8px}
 .contact-list a:hover {
   text-decoration: underline;
 }
+.edu-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.edu-header img.logo {
+  width: 48px;    /* adjust as needed */
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px; /* optional: rounded logos */
+  background: #fff;   /* for transparent PNGs */
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
