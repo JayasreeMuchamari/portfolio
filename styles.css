@@ -101,7 +101,7 @@ form button{margin-top:8px}
 
 /* Control zoom/crop of profile photo */
 .avatar-wrap img {
-  width: 1005%;   /* zoom in */
+  width: 105%;   /* zoom in */
   height: 120%;
   object-fit: cover; /* crop to circle nicely */
   object-position: center ; /* adjust focus: top/center/bottom */
