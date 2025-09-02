@@ -163,22 +163,6 @@
           <ul class="badges"><li>AUC 0.86</li><li>Feature importance</li><li>Retention actions</li></ul>
           <p><a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a></p>
         </article>
-
-        <article class="card revealable">
-          <h3>Marketing Mix ROI</h3>
-          <p class="meta">Python · Statsmodels · Time Series</p>
-          <p>Modeled channel contributions (search, social, email) with adstock &amp; saturation to recommend budget reallocation and lift total ROI.</p>
-          <ul class="badges"><li>MMM</li><li>Adstock</li><li>Budget shift +12% ROI</li></ul>
-          <p><a class="btn" href="#" target="_blank" rel="noopener">Code / Notebook</a></p>
-        </article>
-
-        <article class="card revealable">
-          <h3>Supply Forecasting</h3>
-          <p class="meta">Python · Prophet/XGBoost</p>
-          <p>Hybrid forecast for SKU-location demand; handled holidays and promo spikes; cut stockouts while reducing safety stock.</p>
-          <ul class="badges"><li>MAPE −18%</li><li>Promo-aware</li><li>Service ↑</li></ul>
-          <p><a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a></p>
-        </article>
       </div>
     </section>
 
@@ -190,12 +174,40 @@
       <div class="grid cols-3">
         <!-- CS1 -->
         <article class="card revealable">
-          <h3>CS1 — Boston Housing: Multiple Linear Regression</h3>
-          <p class="meta">Feature engineering · OLS · Model selection</p>
-          <p><strong>Goal:</strong> Predict median home value (MVALUE) using 13 predictors.<br>
-             <strong>Result:</strong> Compared <em>All-predictors</em> vs <em>Exhaustive Search</em> vs <em>Forward Selection</em>. Best validation RMSE=3.8781 and MAPE=14.52% from <em>Exhaustive</em> (11 predictors) → recommended. :contentReference[oaicite:0]{index=0}</p>
-        
-        </article>
+  <h3>CS1 — Boston Housing (Multiple Linear Regression)</h3>
+  <p class="meta">Dataset · Methods · Metrics</p>
+
+  <ul class="badges">
+    <li>Dataset</li>
+  </ul>
+  <p>
+    Boston Housing (506 rows × 14 columns), target <em>MVALUE</em>; no missing values.
+    Train/validation split: 75% / 25%.
+  </p>
+
+  <ul class="badges">
+    <li>Methods</li>
+  </ul>
+  <p>
+    Preprocessing: normalize column names; encode categoricals
+    (<code>CHAR_RIV</code>, <code>C_MVALUE</code>) → binary ints
+    (<code>CHAR_RIV_Y</code>, <code>C_MVALUE_Yes</code>).
+    Models: OLS with all 13 predictors; feature selection via
+    <strong>Exhaustive Search</strong> (11 predictors) and <strong>Forward Selection</strong> (10 predictors).
+    Evaluation on validation split.
+  </p>
+
+  <ul class="badges">
+    <li>Metrics (validation)</li>
+  </ul>
+  <p>
+    All-predictors OLS: RMSE 3.8783, MAPE 14.57%, R² 0.848.<br />
+    Exhaustive Search (11 vars): <strong>RMSE 3.8781</strong>, <strong>MAPE 14.53%</strong> (lowest). 
+  </p>
+
+  <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank" rel="noopener">View PDF</a></p>
+</article>
+
 
         <!-- CS2 -->
         <article class="card revealable">
