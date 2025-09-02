@@ -25,6 +25,7 @@
         <a href="#education" data-nav>Education</a>
         <a href="#experience" data-nav>Experience</a>
         <a href="#projects" data-nav>Projects</a>
+        <a href="#case-studies" data-nav>Case Studies</a>
         <a href="#contact" data-nav>Contact</a>
       </nav>
       <button id="themeBtn" class="theme" aria-label="Toggle theme">🌓</button>
@@ -121,33 +122,120 @@
 </section>
 <!-- Projects  -->
     <section id="projects" tabindex="-1">
-      <h2>Selected Projects</h2>
-      <p class="sub">Outcome‑first cards with quick metrics. Link to code and dashboards.</p>
-      <div class="grid cols-3">
-        <article class="card revealable">
-          <h3>Smart Farming — Crop Recommendation</h3>
-          <p class="meta">Python · SQL · ML · Tableau</p>
-          <p>Random Forest model (75.9% accuracy) to recommend crops from environmental factors. Consolidated multi‑source data; resolved 189+ missing fields; delivered a Tableau dashboard.</p>
-          <ul class="badges"><li>Accuracy 75.9%</li><li>Data cleaning</li><li>Dashboard</li></ul>
-          <p><a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Repo</a></p>
-        </article>
-        <article class="card revealable">
-          <h3>Mental Health Assistant</h3>
-          <p class="meta">Python · NLP (TF‑IDF, NLTK)</p>
-          <p>Supervised classifier to categorize inputs into mental‑health intents (78% accuracy). Implemented preprocessing, tokenization, TF‑IDF; analyzed sentiment & patterns.</p>
-          <ul class="badges"><li>Accuracy 78%</li><li>NLP pipeline</li><li>Notebook</li></ul>
-          <p><a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Notebook</a></p>
-        </article>
-        <article class="card revealable">
-          <h3>CRM Sales Pipeline Insights</h3>
-          <p class="meta">Salesforce Reports · Tableau · Excel</p>
-          <p>Analyzed simulated CRM pipeline stages, conversion, engagement. Built Tableau to track opportunities by region, size, and rep; identified funnel bottlenecks.</p>
-          <ul class="badges"><li>Pipeline analytics</li><li>Conversion</li><li>Forecasting insights</li></ul>
-          <p><a class="btn" href="https://public.tableau.com/app/profile/" target="_blank" rel="noopener">Live dashboard</a></p>
-        </article>
-      </div>
-    </section>
-    <section id="contact" tabindex="-1">
+  <h2>Selected Projects</h2>
+  <p class="sub">Outcome-first cards with quick metrics. Link to code and dashboards.</p>
+
+  <div class="grid cols-3">
+    <!-- Project 1 -->
+    <article class="card revealable">
+      <h3>Smart Farming — Crop Recommendation</h3>
+      <p class="meta">Python · SQL · ML · Tableau</p>
+      <p>Random Forest model (75.9% accuracy) recommending crops from environmental factors. Consolidated multi-source data; fixed 189+ missing fields; shipped a Tableau dashboard.</p>
+      <ul class="badges"><li>Accuracy 75.9%</li><li>Data cleaning</li><li>Dashboard</li></ul>
+      <p>
+        <a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Repo</a>
+      </p>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="card revealable">
+      <h3>Mental Health Assistant</h3>
+      <p class="meta">Python · NLP (TF-IDF, NLTK)</p>
+      <p>Classifier to categorize inputs into mental-health intents (78% accuracy). Built preprocessing, tokenization, TF-IDF; analyzed sentiment & patterns.</p>
+      <ul class="badges"><li>Accuracy 78%</li><li>NLP pipeline</li><li>Notebook</li></ul>
+      <p>
+        <a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Notebook</a>
+      </p>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="card revealable">
+      <h3>CRM Sales Pipeline Insights</h3>
+      <p class="meta">Salesforce Reports · Tableau · Excel</p>
+      <p>Analyzed pipeline stages, conversion, and engagement. Built Tableau to track opps by region, size, rep; identified funnel bottlenecks and forecasting improvements.</p>
+      <ul class="badges"><li>Pipeline analytics</li><li>Conversion</li><li>Forecasting</li></ul>
+      <p>
+        <a class="btn" href="https://public.tableau.com/app/profile/" target="_blank" rel="noopener">Live dashboard</a>
+      </p>
+    </article>
+
+    <!-- Project 4 (new) -->
+    <article class="card revealable">
+      <h3>Retail Churn Prediction</h3>
+      <p class="meta">Python · scikit-learn · SHAP</p>
+      <p>Built a churn model and interpretable insights using SHAP to highlight drivers (discount depth, tenure). Deployed threshold-based retention playbook.</p>
+      <ul class="badges"><li>AUC 0.86</li><li>Feature importance</li><li>Retention actions</li></ul>
+      <p>
+        <a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a>
+      </p>
+    </article>
+
+    <!-- Project 5 (new) -->
+    <article class="card revealable">
+      <h3>Marketing Mix ROI</h3>
+      <p class="meta">Python · Statsmodels · Time Series</p>
+      <p>Modeled channel contributions (search, social, email) with adstock & saturation to recommend budget reallocation and lift total ROI.</p>
+      <ul class="badges"><li>MMM</li><li>Adstock</li><li>Budget shift +12% ROI</li></ul>
+      <p>
+        <a class="btn" href="#" target="_blank" rel="noopener">Code / Notebook</a>
+      </p>
+    </article>
+
+    <!-- Project 6 (new) -->
+    <article class="card revealable">
+      <h3>Supply Forecasting</h3>
+      <p class="meta">Python · Prophet/XGBoost</p>
+      <p>Hybrid forecast for SKU-location demand; handled holidays and promo spikes; cut stockouts while reducing safety stock.</p>
+      <ul class="badges"><li>MAPE −18%</li><li>Promo-aware</li><li>Service ↑</li></ul>
+      <p>
+        <a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+
+    <!-- Case Studeis -->
+<section id="case-studies" tabindex="-1">
+  <h2>Case Studies</h2>
+  <p class="sub">Three concise, business-focused deep dives (problem → analysis → outcome). Download the PDF 1-pager for details.</p>
+
+  <div class="grid cols-3">
+    <!-- Case Study 1 -->
+    <article class="card revealable">
+      <h3>Reducing Support Backlog with Text Analytics</h3>
+      <p class="meta">NLP · Topic Modeling · Ops</p>
+      <p>Clustered 50k support tickets, flagged high-churn intents, and routed top categories. Helped cut backlog and improve SLA adherence.</p>
+      <ul class="badges"><li>Backlog −22%</li><li>SLA compliance ↑</li><li>Actionable themes</li></ul>
+      <p>
+        <a class="btn" href="public/case-support-backlog.pdf" download>Download 1-pager</a>
+      </p>
+    </article>
+
+    <!-- Case Study 2 -->
+    <article class="card revealable">
+      <h3>Sales Funnel Diagnostics for B2B SaaS</h3>
+      <p class="meta">SQL · Funnel · Attribution</p>
+      <p>Audited CRM funnel, found stage leakage at discovery → evaluation; implemented ICP filters and enablement content to raise conversion.</p>
+      <ul class="badges"><li>Stage CVR +9pt</li><li>Time-to-close −14%</li><li>ICP focus</li></ul>
+      <p>
+        <a class="btn" href="public/case-b2b-funnel.pdf" download>Download 1-pager</a>
+      </p>
+    </article>
+
+    <!-- Case Study 3 -->
+    <article class="card revealable">
+      <h3>Inventory Right-Sizing for Seasonal SKUs</h3>
+      <p class="meta">Forecasting · ABC/XYZ · Ops</p>
+      <p>Segmented SKUs, adjusted policies by variability and margin; reduced overstock while maintaining target service levels.</p>
+      <ul class="badges"><li>Carrying cost −11%</li><li>Stockouts −6%</li><li>Service 96%+</li></ul>
+      <p>
+        <a class="btn" href="public/case-inventory.pdf" download>Download 1-pager</a>
+      </p>
+    </article>
+  </div>
+</section>
+
 
       <!-- Contact  -->
   <h2>Contact</h2>
