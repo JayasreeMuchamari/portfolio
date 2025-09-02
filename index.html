@@ -4,16 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jayasree Muchamari — Data Analyst</title>
-  <meta name="description" content="Data Analyst portfolio: SQL, Python, Tableau, ML projects. Master's in Business Analytics (CSU East Bay)." />
+  <meta name="description" content="Data Analyst portfolio: SQL, Python, Tableau, ML projects and case studies. Master's in Business Analytics (CSU East Bay)." />
   <link rel="icon" href="assets/favicon.png" />
-  <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="styles.css?v=4" as="style" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+  <script>/* keep theme across refresh */(function(){const t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body>
   <a class="skip" href="#about">Skip to content</a>
   <div class="progress" id="progress" aria-hidden="true"></div>
+
   <header class="nav" role="banner">
     <div class="inner">
       <button class="hamburger" id="menuBtn" aria-label="Open Menu" aria-expanded="false" aria-controls="siteNav">
@@ -31,23 +32,26 @@
       <button id="themeBtn" class="theme" aria-label="Toggle theme">🌓</button>
     </div>
   </header>
+
   <!-- LinkedIn-style header (full-bleed) -->
-<section class="linkedin-header" aria-label="Profile header">
-  <div class="inner">
-    <div class="cover" role="img" aria-label="Analytics background image"></div>
-    <div class="avatar-wrap">
-      <img src="assets/profile.png" alt="Jayasree Muchamari" width="160" height="160" loading="eager" />
+  <section class="linkedin-header" aria-label="Profile header">
+    <div class="inner">
+      <div class="cover" role="img" aria-label="Analytics background image"></div>
+      <div class="avatar-wrap">
+        <img src="assets/profile.png" alt="Jayasree Muchamari" width="160" height="160" loading="eager" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <main id="main" class="wrap">
+    <!-- ABOUT -->
     <section id="about" class="hero" tabindex="-1">
       <div class="hero__copy">
         <p class="eyebrow">Master's in Business Analytics · CSU East Bay · Dec 2025</p>
         <h1>Data Analyst turning messy data into clear business decisions</h1>
-        <p class="lead">Python, SQL, Tableau/Power BI, and applied ML. Building analytics that reduce cost and improve planning. Expanding Salesforce CRM skills for sales & ops reporting.</p>
+        <p class="lead">Python, SQL, Tableau/Power BI, and applied ML. Building analytics that reduce cost and improve planning. Expanding Salesforce CRM skills for sales &amp; ops reporting.</p>
         <ul class="tags">
-          <li>SQL</li><li>Python (pandas, scikit‑learn)</li><li>Tableau / Power BI</li><li>EDA</li><li>Regression / Classification</li>
+          <li>SQL</li><li>Python (pandas, scikit-learn)</li><li>Tableau / Power BI</li><li>EDA</li><li>Regression / Classification</li>
         </ul>
         <div class="cta">
           <a class="btn primary" href="#projects">View projects</a>
@@ -66,208 +70,235 @@
         <div class="orb orb--3"></div>
       </div>
     </section>
-    <!-- Education  -->
+
+    <!-- EDUCATION -->
     <section id="education" tabindex="-1">
-  <h2>Education</h2>
-  <article class="card revealable">
-    <div class="edu-header">
-      <img src="assets/csueb.png" alt="CSU East Bay logo" class="logo">
-      <div>
-        <h3>MS, Business Analytics</h3>
-        <p class="meta">California State University, East Bay · Expected Dec 2025 · GPA 3.87</p>
-      </div>
-    </div>
-    <p>Coursework: Data Analytics, Machine Learning, Text Mining & GenAI, DBMS, Data Warehousing & Mining, Quant Analytics, Optimization for Analytics, Big Data.</p>
-  </article>
+      <h2>Education</h2>
+      <article class="card revealable">
+        <div class="edu-header">
+          <img src="assets/csueb.png" alt="CSU East Bay logo" class="logo">
+          <div>
+            <h3>MS, Business Analytics</h3>
+            <p class="meta">California State University, East Bay · Expected Dec 2025 · GPA 3.87</p>
+          </div>
+        </div>
+        <p>Coursework: Data Analytics, Machine Learning, Text Mining &amp; GenAI, DBMS, Data Warehousing &amp; Mining, Quant Analytics, Optimization for Analytics, Big Data.</p>
+      </article>
 
-  <article class="card revealable">
-    <div class="edu-header">
-      <img src="assets/mits.png" alt="MITS logo" class="logo">
-      <div>
-        <h3>B.Tech, Computer Science & Engineering</h3>
-        <p class="meta">Madanapalle Institute of Technology & Science · 2019 · GPA 3.70</p>
-      </div>
-    </div>
-    <p>Core CS/ML foundation: DSA, OOP, DBMS, OS, Web Programming, Data Warehousing & Mining, Machine Learning.</p>
-  </article>
-</section>
-<!-- experience  -->
+      <article class="card revealable">
+        <div class="edu-header">
+          <img src="assets/mits.png" alt="MITS logo" class="logo">
+          <div>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="meta">Madanapalle Institute of Technology &amp; Science · 2019 · GPA 3.70</p>
+          </div>
+        </div>
+        <p>Core CS/ML foundation: DSA, OOP, DBMS, OS, Web Programming, Data Warehousing &amp; Mining, Machine Learning.</p>
+      </article>
+    </section>
+
+    <!-- EXPERIENCE -->
     <section id="experience" tabindex="-1">
-  <h2>Experience</h2>
-  <div class="grid cols-2">
-    <article class="card revealable">
-      <div class="edu-header">
-        <img src="assets/terralogic.png" alt="Terralogic logo" class="logo">
-        <div>
-          <h3>Data Analyst Intern</h3>
-          <p class="meta">Terralogic Software Solutions · 01/2019 – 04/2019</p>
-        </div>
+      <h2>Experience</h2>
+      <div class="grid cols-2">
+        <article class="card revealable">
+          <div class="edu-header">
+            <img src="assets/terralogic.png" alt="Terralogic logo" class="logo">
+            <div>
+              <h3>Data Analyst Intern</h3>
+              <p class="meta">Terralogic Software Solutions · 01/2019 – 04/2019</p>
+            </div>
+          </div>
+          <ul class="badges"><li>100+ projects</li><li>5,000+ profiles</li><li>SQL &amp; Tableau</li></ul>
+          <p>Built resource dashboards and EDA on HR/workforce data; reduced ops costs by 20% and improved planning by 25%.</p>
+        </article>
+        <article class="card revealable">
+          <div class="edu-header">
+            <img src="assets/salvin.png" alt="Salvin Infosystems logo" class="logo">
+            <div>
+              <h3>Data Analyst Intern</h3>
+              <p class="meta">Salvin Infosystems · 06/2018 – 12/2018</p>
+            </div>
+          </div>
+          <ul class="badges"><li>Excel/Power BI/Tableau</li><li>Cohort analysis</li><li>A/B tests</li></ul>
+          <p>Analyzed learner engagement; automated weekly reporting with Python/SQL (−20% manual effort); evaluated feature/UI impact on retention.</p>
+        </article>
       </div>
-      <ul class="badges"><li>100+ projects</li><li>5,000+ profiles</li><li>SQL & Tableau</li></ul>
-      <p>Built resource dashboards and EDA on HR/workforce data; reduced ops costs by 20% and improved planning by 25%.</p>
-    </article>
+    </section>
 
-    <article class="card revealable">
-      <div class="edu-header">
-        <img src="assets/salvin.png" alt="Salvin Infosystems logo" class="logo">
-        <div>
-          <h3>Data Analyst Intern</h3>
-          <p class="meta">Salvin Infosystems · 06/2018 – 12/2018</p>
-        </div>
-      </div>
-      <ul class="badges"><li>Excel/Power BI/Tableau</li><li>Cohort analysis</li><li>A/B tests</li></ul>
-      <p>Analyzed learner engagement; automated weekly reporting with Python/SQL (−20% manual effort); evaluated feature/UI impact on retention.</p>
-    </article>
-  </div>
-</section>
-<!-- Projects  -->
+    <!-- PROJECTS (6 cards, 2 rows × 3 cols) -->
     <section id="projects" tabindex="-1">
-  <h2>Selected Projects</h2>
-  <p class="sub">Outcome-first cards with quick metrics. Link to code and dashboards.</p>
+      <h2>Selected Projects</h2>
+      <p class="sub">Outcome-first cards with quick metrics. Link to code and dashboards.</p>
 
-  <div class="grid cols-3">
-    <!-- Project 1 -->
-    <article class="card revealable">
-      <h3>Smart Farming — Crop Recommendation</h3>
-      <p class="meta">Python · SQL · ML · Tableau</p>
-      <p>Random Forest model (75.9% accuracy) recommending crops from environmental factors. Consolidated multi-source data; fixed 189+ missing fields; shipped a Tableau dashboard.</p>
-      <ul class="badges"><li>Accuracy 75.9%</li><li>Data cleaning</li><li>Dashboard</li></ul>
-      <p>
-        <a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Repo</a>
-      </p>
-    </article>
+      <div class="grid cols-3">
+        <article class="card revealable">
+          <h3>Smart Farming — Crop Recommendation</h3>
+          <p class="meta">Python · SQL · ML · Tableau</p>
+          <p>Random Forest model (75.9% accuracy) recommending crops from environmental factors. Consolidated multi-source data; fixed 189+ missing fields; shipped a Tableau dashboard.</p>
+          <ul class="badges"><li>Accuracy 75.9%</li><li>Data cleaning</li><li>Dashboard</li></ul>
+          <p><a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Repo</a></p>
+        </article>
 
-    <!-- Project 2 -->
-    <article class="card revealable">
-      <h3>Mental Health Assistant</h3>
-      <p class="meta">Python · NLP (TF-IDF, NLTK)</p>
-      <p>Classifier to categorize inputs into mental-health intents (78% accuracy). Built preprocessing, tokenization, TF-IDF; analyzed sentiment & patterns.</p>
-      <ul class="badges"><li>Accuracy 78%</li><li>NLP pipeline</li><li>Notebook</li></ul>
-      <p>
-        <a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Notebook</a>
-      </p>
-    </article>
+        <article class="card revealable">
+          <h3>Mental Health Assistant</h3>
+          <p class="meta">Python · NLP (TF-IDF, NLTK)</p>
+          <p>Classifier to categorize inputs into mental-health intents (78% accuracy). Built preprocessing, tokenization, TF-IDF; analyzed sentiment &amp; patterns.</p>
+          <ul class="badges"><li>Accuracy 78%</li><li>NLP pipeline</li><li>Notebook</li></ul>
+          <p><a class="btn" href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">Code / Notebook</a></p>
+        </article>
 
-    <!-- Project 3 -->
-    <article class="card revealable">
-      <h3>CRM Sales Pipeline Insights</h3>
-      <p class="meta">Salesforce Reports · Tableau · Excel</p>
-      <p>Analyzed pipeline stages, conversion, and engagement. Built Tableau to track opps by region, size, rep; identified funnel bottlenecks and forecasting improvements.</p>
-      <ul class="badges"><li>Pipeline analytics</li><li>Conversion</li><li>Forecasting</li></ul>
-      <p>
-        <a class="btn" href="https://public.tableau.com/app/profile/" target="_blank" rel="noopener">Live dashboard</a>
-      </p>
-    </article>
+        <article class="card revealable">
+          <h3>CRM Sales Pipeline Insights</h3>
+          <p class="meta">Salesforce Reports · Tableau · Excel</p>
+          <p>Analyzed pipeline stages, conversion, and engagement. Built Tableau to track opps by region, size, rep; identified funnel bottlenecks and forecasting improvements.</p>
+          <ul class="badges"><li>Pipeline analytics</li><li>Conversion</li><li>Forecasting</li></ul>
+          <p><a class="btn" href="https://public.tableau.com/app/profile/" target="_blank" rel="noopener">Live dashboard</a></p>
+        </article>
 
-    <!-- Project 4 (new) -->
-    <article class="card revealable">
-      <h3>Retail Churn Prediction</h3>
-      <p class="meta">Python · scikit-learn · SHAP</p>
-      <p>Built a churn model and interpretable insights using SHAP to highlight drivers (discount depth, tenure). Deployed threshold-based retention playbook.</p>
-      <ul class="badges"><li>AUC 0.86</li><li>Feature importance</li><li>Retention actions</li></ul>
-      <p>
-        <a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a>
-      </p>
-    </article>
+        <article class="card revealable">
+          <h3>Retail Churn Prediction</h3>
+          <p class="meta">Python · scikit-learn · SHAP</p>
+          <p>Built a churn model and interpretable insights using SHAP to highlight drivers (discount depth, tenure). Deployed threshold-based retention playbook.</p>
+          <ul class="badges"><li>AUC 0.86</li><li>Feature importance</li><li>Retention actions</li></ul>
+          <p><a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a></p>
+        </article>
 
-    <!-- Project 5 (new) -->
-    <article class="card revealable">
-      <h3>Marketing Mix ROI</h3>
-      <p class="meta">Python · Statsmodels · Time Series</p>
-      <p>Modeled channel contributions (search, social, email) with adstock & saturation to recommend budget reallocation and lift total ROI.</p>
-      <ul class="badges"><li>MMM</li><li>Adstock</li><li>Budget shift +12% ROI</li></ul>
-      <p>
-        <a class="btn" href="#" target="_blank" rel="noopener">Code / Notebook</a>
-      </p>
-    </article>
+        <article class="card revealable">
+          <h3>Marketing Mix ROI</h3>
+          <p class="meta">Python · Statsmodels · Time Series</p>
+          <p>Modeled channel contributions (search, social, email) with adstock &amp; saturation to recommend budget reallocation and lift total ROI.</p>
+          <ul class="badges"><li>MMM</li><li>Adstock</li><li>Budget shift +12% ROI</li></ul>
+          <p><a class="btn" href="#" target="_blank" rel="noopener">Code / Notebook</a></p>
+        </article>
 
-    <!-- Project 6 (new) -->
-    <article class="card revealable">
-      <h3>Supply Forecasting</h3>
-      <p class="meta">Python · Prophet/XGBoost</p>
-      <p>Hybrid forecast for SKU-location demand; handled holidays and promo spikes; cut stockouts while reducing safety stock.</p>
-      <ul class="badges"><li>MAPE −18%</li><li>Promo-aware</li><li>Service ↑</li></ul>
-      <p>
-        <a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a>
-      </p>
-    </article>
-  </div>
-</section>
+        <article class="card revealable">
+          <h3>Supply Forecasting</h3>
+          <p class="meta">Python · Prophet/XGBoost</p>
+          <p>Hybrid forecast for SKU-location demand; handled holidays and promo spikes; cut stockouts while reducing safety stock.</p>
+          <ul class="badges"><li>MAPE −18%</li><li>Promo-aware</li><li>Service ↑</li></ul>
+          <p><a class="btn" href="#" target="_blank" rel="noopener">Code / Repo</a></p>
+        </article>
+      </div>
+    </section>
 
+    <!-- CASE STUDIES (with methods + evaluation/selection) -->
+    <section id="case-studies" tabindex="-1">
+      <h2>Case Studies</h2>
+      <p class="sub">Weekly case studies showing approach → methods → evaluation → best model selection. Full reports are linked.</p>
 
-    <!-- Case Studeis -->
-<section id="case-studies" tabindex="-1">
-  <h2>Case Studies</h2>
-  <p class="sub">Three concise, business-focused deep dives (problem → analysis → outcome). Download the PDF 1-pager for details.</p>
+      <div class="grid cols-3">
+        <!-- CS1 -->
+        <article class="card revealable">
+          <h3>CS1 — Boston Housing: Multiple Linear Regression</h3>
+          <p class="meta">Feature engineering · OLS · Model selection</p>
+          <p><strong>Goal:</strong> Predict median home value (MVALUE) using 13 predictors.<br>
+             <strong>Result:</strong> Compared <em>All-predictors</em> vs <em>Exhaustive Search</em> vs <em>Forward Selection</em>. Best validation RMSE=3.8781 and MAPE=14.52% from <em>Exhaustive</em> (11 predictors) → recommended. :contentReference[oaicite:0]{index=0}</p>
+          <details><summary>Methods &amp; evaluation</summary>
+            <ul>
+              <li>Preprocessed and encoded categoricals (CHAR_RIV_Y, C_MVALUE_Yes). No missing values. :contentReference[oaicite:1]{index=1}</li>
+              <li>75/25 split; metrics: R²/Adj-R², RMSE, MAE, MAPE for train/validation (close gaps → low overfitting). :contentReference[oaicite:2]{index=2}</li>
+              <li>Model selection by validation RMSE &amp; parsimony: Exhaustive(11) &lt; All(13) &lt; Forward(10). :contentReference[oaicite:3]{index=3}</li>
+            </ul>
+          </details>
+          <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank" rel="noopener">View PDF</a></p>
+        </article>
 
-  <div class="grid cols-3">
-    <!-- Case Study 1 -->
-    <article class="card revealable">
-      <h3>Reducing Support Backlog with Text Analytics</h3>
-      <p class="meta">NLP · Topic Modeling · Ops</p>
-      <p>Clustered 50k support tickets, flagged high-churn intents, and routed top categories. Helped cut backlog and improve SLA adherence.</p>
-      <ul class="badges"><li>Backlog −22%</li><li>SLA compliance ↑</li><li>Actionable themes</li></ul>
-      <p>
-        <a class="btn" href="public/case-support-backlog.pdf" download>Download 1-pager</a>
-      </p>
-    </article>
+        <!-- CS2 -->
+        <article class="card revealable">
+          <h3>CS2 — Flight Delays: Decision Tree + GridSearch</h3>
+          <p class="meta">CART · GridSearchCV · Confusion matrix</p>
+          <p><strong>Goal:</strong> Classify flight status (ontime/delayed).<br>
+             <strong>Result:</strong> GridSearch best params <code>max_depth=9</code>, <code>min_impurity_decrease=0.001</code>, <code>min_samples_split=20</code>. Train acc 89.49%, validation 86.85% (misclass 13.15%) → chosen over baseline. :contentReference[oaicite:4]{index=4}</p>
+          <details><summary>Methods &amp; evaluation</summary>
+            <ul>
+              <li>Removed DEST/ORIGIN; one-hot CARRIER; 80/20 split. Baseline tree depth=4; then GridSearch across depth/impurity/samples. :contentReference[oaicite:5]{index=5}</li>
+              <li>Compared validation confusion matrices: tuned model has higher accuracy and lower error than baseline. :contentReference[oaicite:6]{index=6}</li>
+            </ul>
+          </details>
+          <p><a class="btn" href="public/case-study-2-flight-delays-tree.pdf" target="_blank" rel="noopener">View PDF</a></p>
+        </article>
 
-    <!-- Case Study 2 -->
-    <article class="card revealable">
-      <h3>Sales Funnel Diagnostics for B2B SaaS</h3>
-      <p class="meta">SQL · Funnel · Attribution</p>
-      <p>Audited CRM funnel, found stage leakage at discovery → evaluation; implemented ICP filters and enablement content to raise conversion.</p>
-      <ul class="badges"><li>Stage CVR +9pt</li><li>Time-to-close −14%</li><li>ICP focus</li></ul>
-      <p>
-        <a class="btn" href="public/case-b2b-funnel.pdf" download>Download 1-pager</a>
-      </p>
-    </article>
+        <!-- CS3 -->
+        <article class="card revealable">
+          <h3>CS3 — Flight Delays: Logistic Regression</h3>
+          <p class="meta">Logit · Probabilities · Lift chart</p>
+          <p><strong>Goal:</strong> Alternative linear classifier for the same dataset.<br>
+             <strong>Result:</strong> Produced probabilities and confusion matrices; added Lift for the “delayed” class. Compared with CS2 tuned tree to choose better model for deployment. :contentReference[oaicite:7]{index=7}</p>
+          <details><summary>Methods &amp; evaluation</summary>
+            <ul>
+              <li>Binary outcome; dummy-encoded carriers; 80/20 split (random_state=1). :contentReference[oaicite:8]{index=8}</li>
+              <li>Validation confusion matrix + Lift to assess ranking of delay risk; selection done by accuracy vs tree (CS2). :contentReference[oaicite:9]{index=9}</li>
+            </ul>
+          </details>
+          <p><a class="btn" href="public/case-study-3-flight-delays-logistic.pdf" target="_blank" rel="noopener">View PDF</a></p>
+        </article>
 
-    <!-- Case Study 3 -->
-    <article class="card revealable">
-      <h3>Inventory Right-Sizing for Seasonal SKUs</h3>
-      <p class="meta">Forecasting · ABC/XYZ · Ops</p>
-      <p>Segmented SKUs, adjusted policies by variability and margin; reduced overstock while maintaining target service levels.</p>
-      <ul class="badges"><li>Carrying cost −11%</li><li>Stockouts −6%</li><li>Service 96%+</li></ul>
-      <p>
-        <a class="btn" href="public/case-inventory.pdf" download>Download 1-pager</a>
-      </p>
-    </article>
-  </div>
-</section>
+        <!-- CS4 -->
+        <article class="card revealable">
+          <h3>CS4 — Boston Housing: Neural Network (MLPRegressor)</h3>
+          <p class="meta">StandardScaler · MLP · GridSearchCV</p>
+          <p><strong>Goal:</strong> Capture non-linearities missed by linear models.<br>
+             <strong>Result:</strong> Tuned hidden nodes (2–20); best <em>18</em> nodes. Validation RMSE ≈ 3.09, MAPE ≈ 12.5% (beats CS1); watch moderate overfitting. Recommended when accuracy matters most. :contentReference[oaicite:10]{index=10}</p>
+          <details><summary>Methods &amp; evaluation</summary>
+            <ul>
+              <li>Scaled features; trained MLP(solver=lbfgs, max_iter=10000). Tracked train vs validation errors for overfitting. :contentReference[oaicite:11]{index=11}</li>
+              <li>Compared against CS1 Exhaustive model — NN wins on RMSE/MAE/MAPE on validation. :contentReference[oaicite:12]{index=12}</li>
+            </ul>
+          </details>
+          <p><a class="btn" href="public/case-study-4-boston-housing-nn.docx" target="_blank" rel="noopener">Download DOCX</a></p>
+        </article>
 
+        <!-- CS5 -->
+        <article class="card revealable">
+          <h3>CS5 — US Crime: Hierarchical vs K-Means</h3>
+          <p class="meta">Z-score scaling · Dendrogram · Elbow</p>
+          <p><strong>Goal:</strong> Segment 50 states by crime profile.<br>
+             <strong>Result:</strong> Hierarchical (avg linkage, threshold 3.3) → ~5 clusters; K-means (k=6) emphasizes actionable patterns (e.g., Auto-theft hotspots, Robbery-prone). Elbow suggests smaller k is often enough; k-means recommended for policy targeting. :contentReference[oaicite:13]{index=13}</p>
+          <details><summary>Methods &amp; evaluation</summary>
+            <ul>
+              <li>Z-score normalization; hierarchical labels vs k-means centroids &amp; profiles; elbow to gauge k. :contentReference[oaicite:14]{index=14}</li>
+              <li>Labelled clusters (High Crime, Moderate, Low Crime, Auto-theft Hotspots, Robbery-prone). :contentReference[oaicite:15]{index=15}</li>
+            </ul>
+          </details>
+          <p><a class="btn" href="public/case-study-5-crime-clustering.docx" target="_blank" rel="noopener">Download DOCX</a></p>
+        </article>
+      </div>
+    </section>
 
-      <!-- Contact  -->
-  <h2>Contact</h2>
-  <div class="grid cols-2">
-    <article class="card">
-      <h3>Get in touch</h3>
-      <ul class="contact-list">
-        <li><i class="fa-solid fa-phone"></i> <a href="tel:+12796677014">+1 (279) 667-7014</a></li>
-        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:jayasreemuchamari@gmail.com">jayasreemuchamari@gmail.com</a></li>
-        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/jayasreemuchamari" target="_blank" rel="noopener">linkedin.com/in/jayasreemuchamari</a></li>
-        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">github.com/Jayasreemuchamari</a></li>
-        <li><i class="fa-solid fa-location-dot"></i> Dublin, CA, United States</li>
-      </ul>
-    </article>
+    <!-- CONTACT -->
+    <section id="contact" tabindex="-1">
+      <h2>Contact</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>Get in touch</h3>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+12796677014">+1 (279) 667-7014</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:jayasreemuchamari@gmail.com">jayasreemuchamari@gmail.com</a></li>
+            <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/jayasreemuchamari" target="_blank" rel="noopener">linkedin.com/in/jayasreemuchamari</a></li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">github.com/Jayasreemuchamari</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> Dublin, CA, United States</li>
+          </ul>
+        </article>
 
-    <article class="card">
-      <h3>Message me</h3>
-      <form id="contactForm" action="https://formspree.io/f/mpwjjpnq" method="POST">
-        <label>Name<input name="name" required /></label>
-        <label>Email<input name="email" type="email" required /></label>
-        <label>Message<textarea name="message" rows="4" required></textarea></label>
-        <button class="btn primary" type="submit">Send</button>
-        <p class="meta" id="formMsg" role="status" aria-live="polite"></p>
-      </form>
-    </article>
-  </div>
-</section>
-
+        <article class="card">
+          <h3>Message me</h3>
+          <form id="contactForm" action="https://formspree.io/f/mpwjjpnq" method="POST">
+            <label>Name<input name="name" required /></label>
+            <label>Email<input name="email" type="email" required /></label>
+            <label>Message<textarea name="message" rows="4" required></textarea></label>
+            <button class="btn primary" type="submit">Send</button>
+            <p class="meta" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
   </main>
+
   <footer class="foot">
     <p>© <span id="year"></span> Jayasree Muchamari · Data Analyst · Dublin, CA</p>
   </footer>
-  <script defer src="main.js"></script>
+
+  <script defer src="main.js?v=4"></script>
 </body>
 </html>
