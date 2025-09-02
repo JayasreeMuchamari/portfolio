@@ -109,3 +109,28 @@ form button{margin-top:8px}
   .avatar-wrap{ bottom:-56px; left:16px; }
   .avatar-wrap img{ width:112px; height:112px; }
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  margin: 10px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-list i {
+  color: var(--accent);
+  width: 20px;
+  text-align: center;
+}
+.contact-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.contact-list a:hover {
+  text-decoration: underline;
+}

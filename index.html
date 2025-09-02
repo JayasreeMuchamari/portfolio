@@ -8,6 +8,8 @@
   <link rel="icon" href="assets/favicon.png" />
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
   <a class="skip" href="#about">Skip to content</a>
@@ -121,26 +123,32 @@
       </div>
     </section>
     <section id="contact" tabindex="-1">
-      <h2>Contact</h2>
-      <div class="grid cols-2">
-        <article class="card">
-          <h3>Email</h3>
-          <p><a href="mailto:jayasreemuchamari@gmail.com">jayasreemuchamari@gmail.com</a></p>
-          <p><a href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">github.com/Jayasreemuchamari</a></p>
-          <p><a href="https://www.linkedin.com/in/jayasreemuchamari" target="_blank" rel="noopener">linkedin.com/in/jayasreemuchamari</a></p>
-        </article>
-        <article class="card">
-          <h3>Message me</h3>
-          <form id="contactForm" action="https://formspree.io/f/your-id" method="POST">
-            <label>Name<input name="name" required /></label>
-            <label>Email<input name="email" type="email" required /></label>
-            <label>Message<textarea name="message" rows="4" required></textarea></label>
-            <button class="btn primary" type="submit">Send</button>
-            <p class="meta" id="formMsg" role="status" aria-live="polite"></p>
-          </form>
-        </article>
-      </div>
-    </section>
+  <h2>Contact</h2>
+  <div class="grid cols-2">
+    <article class="card">
+      <h3>Get in touch</h3>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:+12796677014">+1 (279) 667-7014</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:jayasreemuchamari@gmail.com">jayasreemuchamari@gmail.com</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/jayasreemuchamari" target="_blank" rel="noopener">linkedin.com/in/jayasreemuchamari</a></li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Jayasreemuchamari" target="_blank" rel="noopener">github.com/Jayasreemuchamari</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> Dublin, CA, United States</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Message me</h3>
+      <form id="contactForm" action="https://formspree.io/f/mpwjjpnq" method="POST">
+        <label>Name<input name="name" required /></label>
+        <label>Email<input name="email" type="email" required /></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn primary" type="submit">Send</button>
+        <p class="meta" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </article>
+  </div>
+</section>
+
   </main>
   <footer class="foot">
     <p>© <span id="year"></span> Jayasree Muchamari · Data Analyst · Dublin, CA</p>
