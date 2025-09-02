@@ -168,108 +168,74 @@
 
     <!-- CASE STUDIES (with methods + evaluation/selection) -->
     <section id="case-studies" tabindex="-1">
-      <h2>Case Studies</h2>
-      <p class="sub">Weekly case studies showing approach → methods → evaluation → best model selection. Full reports are linked.</p>
+  <h2>Case Studies</h2>
+  <p class="sub">Summary of methods used in each case study (dataset, preprocessing, models, evaluation).</p>
 
-      <div class="grid cols-3">
-        <!-- CS1 -->
-        <article class="card revealable">
-  <h3>CS1 — Boston Housing (Multiple Linear Regression)</h3>
-  <p class="meta">Dataset · Methods · Metrics</p>
+  <div class="grid cols-3">
 
-  <ul class="badges">
-    <li>Dataset</li>
-  </ul>
-  <p>
-    Boston Housing (506 rows × 14 columns), target <em>MVALUE</em>; no missing values.
-    Train/validation split: 75% / 25%.
-  </p>
+    <!-- CS1 -->
+    <article class="card revealable">
+      <h3>CS1 — Boston Housing (Multiple Linear Regression)</h3>
+      <ul>
+        <li><strong>Dataset:</strong> Boston Housing, 506 rows × 14 cols:contentReference[oaicite:5]{index=5}</li>
+        <li><strong>Preprocessing:</strong> Renamed multi-word columns; encoded <code>CHAR_RIV</code> &amp; <code>C_MVALUE</code> as binary:contentReference[oaicite:6]{index=6}</li>
+        <li><strong>Models:</strong> OLS with all predictors; Exhaustive Search; Forward Selection:contentReference[oaicite:7]{index=7}</li>
+        <li><strong>Metrics:</strong> R², Adj-R², RMSE, MAE, MAPE (train/validation):contentReference[oaicite:8]{index=8}</li>
+      </ul>
+      <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank">View PDF</a></p>
+    </article>
 
-  <ul class="badges">
-    <li>Methods</li>
-  </ul>
-  <p>
-    Preprocessing: normalize column names; encode categoricals
-    (<code>CHAR_RIV</code>, <code>C_MVALUE</code>) → binary ints
-    (<code>CHAR_RIV_Y</code>, <code>C_MVALUE_Yes</code>).
-    Models: OLS with all 13 predictors; feature selection via
-    <strong>Exhaustive Search</strong> (11 predictors) and <strong>Forward Selection</strong> (10 predictors).
-    Evaluation on validation split.
-  </p>
+    <!-- CS2 -->
+    <article class="card revealable">
+      <h3>CS2 — Flight Delays (Decision Tree)</h3>
+      <ul>
+        <li><strong>Dataset:</strong> Flight Delays, 2201 rows × 11 cols:contentReference[oaicite:9]{index=9}</li>
+        <li><strong>Preprocessing:</strong> Dropped DEST/ORIGIN; one-hot encoded CARRIER:contentReference[oaicite:10]{index=10}</li>
+        <li><strong>Models:</strong> CART (max depth=4) → GridSearchCV tuned tree:contentReference[oaicite:11]{index=11}</li>
+        <li><strong>Metrics:</strong> Confusion matrices, Accuracy, Misclassification rate:contentReference[oaicite:12]{index=12}</li>
+      </ul>
+      <p><a class="btn" href="public/case-study-2-flight-delays-tree.pdf" target="_blank">View PDF</a></p>
+    </article>
 
-  <ul class="badges">
-    <li>Metrics (validation)</li>
-  </ul>
-  <p>
-    All-predictors OLS: RMSE 3.8783, MAPE 14.57%, R² 0.848.<br />
-    Exhaustive Search (11 vars): <strong>RMSE 3.8781</strong>, <strong>MAPE 14.53%</strong> (lowest). 
-  </p>
+    <!-- CS3 -->
+    <article class="card revealable">
+      <h3>CS3 — Flight Delays (Logistic Regression)</h3>
+      <ul>
+        <li><strong>Dataset:</strong> Flight Delays (same as CS2):contentReference[oaicite:13]{index=13}</li>
+        <li><strong>Preprocessing:</strong> Dropped DEST/ORIGIN; encoded CARRIER &amp; FL_STATUS as binary:contentReference[oaicite:14]{index=14}</li>
+        <li><strong>Models:</strong> LogisticRegression (train/val split 80/20):contentReference[oaicite:15]{index=15}</li>
+        <li><strong>Metrics:</strong> Confusion matrices, Probabilities, Lift chart:contentReference[oaicite:16]{index=16}</li>
+      </ul>
+      <p><a class="btn" href="public/case-study-3-flight-delays-logistic.pdf" target="_blank">View PDF</a></p>
+    </article>
 
-  <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank" rel="noopener">View PDF</a></p>
-</article>
+    <!-- CS4 -->
+    <article class="card revealable">
+      <h3>CS4 — Boston Housing (Neural Network)</h3>
+      <ul>
+        <li><strong>Dataset:</strong> Boston Housing, 506 rows × 14 cols:contentReference[oaicite:17]{index=17}</li>
+        <li><strong>Preprocessing:</strong> Encoded categoricals; scaled predictors with StandardScaler:contentReference[oaicite:18]{index=18}</li>
+        <li><strong>Models:</strong> MLPRegressor (hidden_layer_sizes=15, solver=lbfgs, max_iter=10000):contentReference[oaicite:19]{index=19}</li>
+        <li><strong>Metrics:</strong> RMSE, MAE, MAPE (train/validation); GridSearch tuned nodes (2–20):contentReference[oaicite:20]{index=20}</li>
+      </ul>
+      <p><a class="btn" href="public/case-study-4-boston-housing-nn.docx" target="_blank">Download DOCX</a></p>
+    </article>
 
+    <!-- CS5 -->
+    <article class="card revealable">
+      <h3>CS5 — US Crime (Clustering)</h3>
+      <ul>
+        <li><strong>Dataset:</strong> U.S. Crime, 50 states × 8 crime variables:contentReference[oaicite:21]{index=21}</li>
+        <li><strong>Preprocessing:</strong> Z-score normalization:contentReference[oaicite:22]{index=22}</li>
+        <li><strong>Models:</strong> Hierarchical (average linkage, dendrogram threshold=3.3); K-means (k=6):contentReference[oaicite:23]{index=23}</li>
+        <li><strong>Metrics:</strong> Cluster profiles via normalized means &amp; centroids; Elbow chart for k:contentReference[oaicite:24]{index=24}</li>
+      </ul>
+      <p><a class="btn" href="public/case-study-5-crime-clustering.docx" target="_blank">Download DOCX</a></p>
+    </article>
 
-        <!-- CS2 -->
-        <article class="card revealable">
-          <h3>CS2 — Flight Delays: Decision Tree + GridSearch</h3>
-          <p class="meta">CART · GridSearchCV · Confusion matrix</p>
-          <p><strong>Goal:</strong> Classify flight status (ontime/delayed).<br>
-             <strong>Result:</strong> GridSearch best params <code>max_depth=9</code>, <code>min_impurity_decrease=0.001</code>, <code>min_samples_split=20</code>. Train acc 89.49%, validation 86.85% (misclass 13.15%) → chosen over baseline. :contentReference[oaicite:4]{index=4}</p>
-          <details><summary>Methods &amp; evaluation</summary>
-            <ul>
-              <li>Removed DEST/ORIGIN; one-hot CARRIER; 80/20 split. Baseline tree depth=4; then GridSearch across depth/impurity/samples. :contentReference[oaicite:5]{index=5}</li>
-              <li>Compared validation confusion matrices: tuned model has higher accuracy and lower error than baseline. :contentReference[oaicite:6]{index=6}</li>
-            </ul>
-          </details>
-          <p><a class="btn" href="public/case-study-2-flight-delays-tree.pdf" target="_blank" rel="noopener">View PDF</a></p>
-        </article>
+  </div>
+</section>
 
-        <!-- CS3 -->
-        <article class="card revealable">
-          <h3>CS3 — Flight Delays: Logistic Regression</h3>
-          <p class="meta">Logit · Probabilities · Lift chart</p>
-          <p><strong>Goal:</strong> Alternative linear classifier for the same dataset.<br>
-             <strong>Result:</strong> Produced probabilities and confusion matrices; added Lift for the “delayed” class. Compared with CS2 tuned tree to choose better model for deployment. :contentReference[oaicite:7]{index=7}</p>
-          <details><summary>Methods &amp; evaluation</summary>
-            <ul>
-              <li>Binary outcome; dummy-encoded carriers; 80/20 split (random_state=1). :contentReference[oaicite:8]{index=8}</li>
-              <li>Validation confusion matrix + Lift to assess ranking of delay risk; selection done by accuracy vs tree (CS2). :contentReference[oaicite:9]{index=9}</li>
-            </ul>
-          </details>
-          <p><a class="btn" href="public/case-study-3-flight-delays-logistic.pdf" target="_blank" rel="noopener">View PDF</a></p>
-        </article>
-
-        <!-- CS4 -->
-        <article class="card revealable">
-          <h3>CS4 — Boston Housing: Neural Network (MLPRegressor)</h3>
-          <p class="meta">StandardScaler · MLP · GridSearchCV</p>
-          <p><strong>Goal:</strong> Capture non-linearities missed by linear models.<br>
-             <strong>Result:</strong> Tuned hidden nodes (2–20); best <em>18</em> nodes. Validation RMSE ≈ 3.09, MAPE ≈ 12.5% (beats CS1); watch moderate overfitting. Recommended when accuracy matters most. :contentReference[oaicite:10]{index=10}</p>
-          <details><summary>Methods &amp; evaluation</summary>
-            <ul>
-              <li>Scaled features; trained MLP(solver=lbfgs, max_iter=10000). Tracked train vs validation errors for overfitting. :contentReference[oaicite:11]{index=11}</li>
-              <li>Compared against CS1 Exhaustive model — NN wins on RMSE/MAE/MAPE on validation. :contentReference[oaicite:12]{index=12}</li>
-            </ul>
-          </details>
-          <p><a class="btn" href="public/case-study-4-boston-housing-nn.docx" target="_blank" rel="noopener">Download DOCX</a></p>
-        </article>
-
-        <!-- CS5 -->
-        <article class="card revealable">
-          <h3>CS5 — US Crime: Hierarchical vs K-Means</h3>
-          <p class="meta">Z-score scaling · Dendrogram · Elbow</p>
-          <p><strong>Goal:</strong> Segment 50 states by crime profile.<br>
-             <strong>Result:</strong> Hierarchical (avg linkage, threshold 3.3) → ~5 clusters; K-means (k=6) emphasizes actionable patterns (e.g., Auto-theft hotspots, Robbery-prone). Elbow suggests smaller k is often enough; k-means recommended for policy targeting. :contentReference[oaicite:13]{index=13}</p>
-          <details><summary>Methods &amp; evaluation</summary>
-            <ul>
-              <li>Z-score normalization; hierarchical labels vs k-means centroids &amp; profiles; elbow to gauge k. :contentReference[oaicite:14]{index=14}</li>
-              <li>Labelled clusters (High Crime, Moderate, Low Crime, Auto-theft Hotspots, Robbery-prone). :contentReference[oaicite:15]{index=15}</li>
-            </ul>
-          </details>
-          <p><a class="btn" href="public/case-study-5-crime-clustering.docx" target="_blank" rel="noopener">Download DOCX</a></p>
-        </article>
-      </div>
-    </section>
 
     <!-- CONTACT -->
     <section id="contact" tabindex="-1">
