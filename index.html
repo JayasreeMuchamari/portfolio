@@ -168,66 +168,29 @@
 
   <div class="grid cols-3">
 
-    <!-- CS1 -->
-    <article class="card revealable">
-      <h3>CS1 — Boston Housing (Multiple Linear Regression)</h3>
-      <ul>
-        <li><strong>Dataset:</strong> Boston Housing, 506 rows × 14 cols:contentReference[oaicite:5]{index=5}</li>
-        <li><strong>Preprocessing:</strong> Renamed multi-word columns; encoded <code>CHAR_RIV</code> &amp; <code>C_MVALUE</code> as binary:contentReference[oaicite:6]{index=6}</li>
-        <li><strong>Models:</strong> OLS with all predictors; Exhaustive Search; Forward Selection:contentReference[oaicite:7]{index=7}</li>
-        <li><strong>Metrics:</strong> R², Adj-R², RMSE, MAE, MAPE (train/validation):contentReference[oaicite:8]{index=8}</li>
-      </ul>
-      <p><a class="btn" href="public/case-study-1-boston-housing.pdf" target="_blank">View PDF</a></p>
-    </article>
+   <section id="case-intro" tabindex="-1">
+  <h2>Case Assignments Overview</h2>
+  <p class="sub">
+    A series of weekly case assignments completed during my Master's in Business Analytics,
+    designed to apply machine learning and data science methods on real-world datasets.
+  </p>
 
-    <!-- CS2 -->
-    <article class="card revealable">
-      <h3>CS2 — Flight Delays (Decision Tree)</h3>
-      <ul>
-        <li><strong>Dataset:</strong> Flight Delays, 2201 rows × 11 cols:contentReference[oaicite:9]{index=9}</li>
-        <li><strong>Preprocessing:</strong> Dropped DEST/ORIGIN; one-hot encoded CARRIER:contentReference[oaicite:10]{index=10}</li>
-        <li><strong>Models:</strong> CART (max depth=4) → GridSearchCV tuned tree:contentReference[oaicite:11]{index=11}</li>
-        <li><strong>Metrics:</strong> Confusion matrices, Accuracy, Misclassification rate:contentReference[oaicite:12]{index=12}</li>
-      </ul>
-      <p><a class="btn" href="public/case-study-2-flight-delays-tree.pdf" target="_blank">View PDF</a></p>
-    </article>
-
-    <!-- CS3 -->
-    <article class="card revealable">
-      <h3>CS3 — Flight Delays (Logistic Regression)</h3>
-      <ul>
-        <li><strong>Dataset:</strong> Flight Delays (same as CS2):contentReference[oaicite:13]{index=13}</li>
-        <li><strong>Preprocessing:</strong> Dropped DEST/ORIGIN; encoded CARRIER &amp; FL_STATUS as binary:contentReference[oaicite:14]{index=14}</li>
-        <li><strong>Models:</strong> LogisticRegression (train/val split 80/20):contentReference[oaicite:15]{index=15}</li>
-        <li><strong>Metrics:</strong> Confusion matrices, Probabilities, Lift chart:contentReference[oaicite:16]{index=16}</li>
-      </ul>
-      <p><a class="btn" href="public/case-study-3-flight-delays-logistic.pdf" target="_blank">View PDF</a></p>
-    </article>
-
-    <!-- CS4 -->
-    <article class="card revealable">
-      <h3>CS4 — Boston Housing (Neural Network)</h3>
-      <ul>
-        <li><strong>Dataset:</strong> Boston Housing, 506 rows × 14 cols:contentReference[oaicite:17]{index=17}</li>
-        <li><strong>Preprocessing:</strong> Encoded categoricals; scaled predictors with StandardScaler:contentReference[oaicite:18]{index=18}</li>
-        <li><strong>Models:</strong> MLPRegressor (hidden_layer_sizes=15, solver=lbfgs, max_iter=10000):contentReference[oaicite:19]{index=19}</li>
-        <li><strong>Metrics:</strong> RMSE, MAE, MAPE (train/validation); GridSearch tuned nodes (2–20):contentReference[oaicite:20]{index=20}</li>
-      </ul>
-      <p><a class="btn" href="public/case-study-4-boston-housing-nn.docx" target="_blank">Download DOCX</a></p>
-    </article>
-
-    <!-- CS5 -->
-    <article class="card revealable">
-      <h3>CS5 — US Crime (Clustering)</h3>
-      <ul>
-        <li><strong>Dataset:</strong> U.S. Crime, 50 states × 8 crime variables:contentReference[oaicite:21]{index=21}</li>
-        <li><strong>Preprocessing:</strong> Z-score normalization:contentReference[oaicite:22]{index=22}</li>
-        <li><strong>Models:</strong> Hierarchical (average linkage, dendrogram threshold=3.3); K-means (k=6):contentReference[oaicite:23]{index=23}</li>
-        <li><strong>Metrics:</strong> Cluster profiles via normalized means &amp; centroids; Elbow chart for k:contentReference[oaicite:24]{index=24}</li>
-      </ul>
-      <p><a class="btn" href="public/case-study-5-crime-clustering.docx" target="_blank">Download DOCX</a></p>
-    </article>
-
+  <div class="card revealable">
+    <p>
+      Each case study focused on <strong>end-to-end analytics</strong>: from data preprocessing and feature
+      engineering to model building, evaluation, and selecting the best approach. The assignments
+      span multiple domains and techniques:
+    </p>
+    <ul>
+      <li><strong>Regression:</strong> Boston Housing dataset – Multiple Linear Regression & Neural Networks</li>
+      <li><strong>Classification:</strong> Flight Delays dataset – Decision Trees, Logistic Regression</li>
+      <li><strong>Clustering:</strong> U.S. Crime dataset – Hierarchical & K-Means Clustering</li>
+    </ul>
+    <p>
+      The objective was not only to <em>implement algorithms</em> but also to critically evaluate
+      models using metrics like RMSE, MAE, MAPE, Accuracy, Confusion Matrices, and Lift Charts.
+      Recommendations were made on which models generalize best and why.
+    </p>
   </div>
 </section>
 
