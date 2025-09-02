@@ -66,45 +66,46 @@ form button{margin-top:8px}
 .progress{position:fixed;inset:0 auto auto 0;height:3px;background:linear-gradient(90deg,#79ffe1,#a0e9ff);transform-origin:left;transform:scaleX(0);z-index:60}
 @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important} }
 
-/* LinkedIn-style header */
-.linkedin-header { 
-  position: relative; 
-  margin: 0; 
-  /* make the banner full-bleed while content stays centered */
-  width: 100vw; 
-  left: 50%; 
-  right: 50%;
-  margin-left: -50vw; 
-  margin-right: -50vw; 
-  margin-bottom: 96px;  /* creates space for overlapping avatar */
-  border-bottom: 1px solid var(--line);
+/* LinkedIn-style header (full-bleed + aligned to content grid) */
+.linkedin-header{
+  width:100%;
+  margin:0 0 96px;           /* space for overlapping avatar */
+  border-bottom:1px solid var(--line);
+  background:var(--bg);
 }
-.linkedin-header .cover {
-  height: 240px;
-  background-image: url("assets/banner.jpg"); /* replace with your banner */
-  background-size: cover;
-  background-position: center;
-  background-color: #0f1116; /* fallback */
+.linkedin-header .inner{
+  max-width:var(--max);
+  margin:0 auto;
+  position:relative;         /* anchor the avatar */
+}
+.linkedin-header .cover{
+  height:260px;
+  width:100%;
+  background:url("assets/banner.jpg") center/cover no-repeat;
+  background-color:#0f1116;  /* fallback */
 }
 
-/* Avatar overlaps the bottom-left of the banner */
-.avatar-wrap {
-  position: absolute;
-  left: max(24px, calc((100vw - var(--max))/2 + 24px)); /* aligns to page content edge */
-  bottom: -64px;
+/* Overlapping avatar */
+.avatar-wrap{
+  position:absolute;
+  left:24px;                 /* matches page padding */
+  bottom:-64px;              /* overlap below the banner */
 }
-.avatar-wrap img {
-  display: block;
-  width: 128px; height: 128px;
-  border-radius: 50%;
-  border: 4px solid var(--bg);         /* clean ring that adapts to theme */
-  box-shadow: 0 6px 24px rgba(0,0,0,.35);
-  background: #fff;
+.avatar-wrap img{
+  display:block;
+  width:128px; height:128px;
+  border-radius:50%;
+  border:4px solid var(--bg);         /* ring that adapts to theme */
+  box-shadow:0 6px 24px rgba(0,0,0,.35);
+  background:#fff;
 }
 
-/* Small screens */
-@media (max-width: 600px) {
-  .linkedin-header .cover { height: 200px; }
-  .avatar-wrap { bottom: -56px; }
-  .avatar-wrap img { width: 112px; height: 112px; }
+/* Make sure the first section doesn't collide when jumped to */
+#about{ scroll-margin-top: calc(var(--nav-h) + 96px); }
+
+/* Mobile tweaks */
+@media (max-width:600px){
+  .linkedin-header .cover{ height:200px; }
+  .avatar-wrap{ bottom:-56px; left:16px; }
+  .avatar-wrap img{ width:112px; height:112px; }
 }
